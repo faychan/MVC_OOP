@@ -90,6 +90,7 @@ public class home extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tb1 = new javax.swing.JTable();
         jPanel5 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -99,7 +100,7 @@ public class home extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 51));
+        jPanel1.setBackground(new java.awt.Color(255, 153, 153));
         jPanel1.setLayout(null);
 
         jLabel7.setFont(new java.awt.Font("Tempus Sans ITC", 0, 14)); // NOI18N
@@ -129,7 +130,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 650, 80);
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 153));
+        jPanel2.setBackground(new java.awt.Color(255, 204, 153));
         jPanel2.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
@@ -187,7 +188,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
         jPanel2.setBounds(30, 80, 460, 220);
 
-        jPanel3.setBackground(new java.awt.Color(204, 255, 153));
+        jPanel3.setBackground(new java.awt.Color(255, 204, 153));
         jPanel3.setLayout(null);
 
         simpan.setFont(new java.awt.Font("Tempus Sans ITC", 0, 14)); // NOI18N
@@ -263,7 +264,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(cari);
         cari.setBounds(470, 310, 70, 30);
 
-        jPanel4.setBackground(new java.awt.Color(255, 153, 102));
+        jPanel4.setBackground(new java.awt.Color(255, 204, 153));
         jPanel4.setLayout(null);
 
         tb1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 12)); // NOI18N
@@ -316,15 +317,17 @@ public class home extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(153, 255, 153));
         jPanel5.setForeground(new java.awt.Color(153, 255, 153));
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/madagascar-sky.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel5);
@@ -363,7 +366,7 @@ public class home extends javax.swing.JFrame {
 
     private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
         ctoko.CariKategori();
-        ctoko.isiTable();
+        //ctoko.isiTable();
     }//GEN-LAST:event_cariActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
@@ -509,6 +512,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
